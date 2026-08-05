@@ -5,6 +5,7 @@
   padding: 60px 20px;
   gap: 16px;
   text-align: center;
+  width: 100%;
 }
 
 .upload-section h2 {
@@ -12,7 +13,7 @@
   font-weight: 700;
 }
 
-.upload-section p {
+.upload-section > p {
   color: var(--text-gray);
   font-size: 16px;
 }
@@ -27,14 +28,8 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  cursor: pointer;
-  transition: border-color 0.3s;
   background-color: var(--bg-card);
   margin-top: 20px;
-}
-
-.upload-box.dragging {
-  border-color: var(--primary);
 }
 
 .upload-icon {
@@ -44,11 +39,6 @@
 .upload-box p {
   color: var(--text-gray);
   font-size: 15px;
-}
-
-.upload-box span {
-  color: var(--text-gray);
-  font-size: 13px;
 }
 
 .upload-btn {
@@ -81,4 +71,29 @@
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.result-box {
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.result-box h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.result-box pre {
+  white-space: pre-wrap;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-gray);
+  font-size: 14px;
+  line-height: 1.8;
 }

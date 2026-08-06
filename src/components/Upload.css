@@ -97,3 +97,31 @@
   font-size: 14px;
   line-height: 1.8;
 }
+.result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.result-heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+  color: var(--text-main);
+}
+
+.result-heading.red {
+  color: #ff4444;
+}
+
+.result-heading.gold {
+  color: var(--primary);
+}
+
+.result-line {
+  color: var(--text-gray);
+  font-size: 14px;
+  line-height: 1.8;
+  padding-left: 12px;
+  border-left: 2px solid var(--border);
+}

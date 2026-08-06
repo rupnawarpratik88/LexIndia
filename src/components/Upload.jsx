@@ -66,12 +66,21 @@ const Upload = () => {
           {loading ? '⏳ Analyzing...' : '⚖️ Analyze with AI'}
         </button>
       )}
-      {result && (
-        <div className="result-box">
-          <h3>⚖️ LexIndia Analysis</h3>
-          <pre>{result}</pre>
-        </div>
-      )}
+     {result && (
+  <div className="result-box">
+    <h3>⚖️ LexIndia Analysis</h3>
+    <div className="result-content">
+      {result.split('\n').map((line, index) => {
+        if (line.includes('SUMMARY')) return <h4 key={index} className="result-heading">📋 {line}</h4>
+        if (line.includes('RISKY')) return <h4 key={index} className="result-heading red">⚠️ {line}</h4>
+        if (line.includes('KEY POINTS')) return <h4 key={index} className="result-heading">✅ {line}</h4>
+        if (line.includes('RECOMMENDED')) return <h4 key={index} className="result-heading gold">🔍 {line}</h4>
+        if (line.trim() === '') return <br key={index} />
+        return <p key={index} className="result-line">{line}</p>
+      })}
+    </div>
+  </div>
+)}
     </section>
   )
 }

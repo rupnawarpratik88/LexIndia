@@ -1,0 +1,80 @@
+.hiw-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 16px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.hiw-badge {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.hiw-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.hiw-section > p {
+  color: var(--text-gray);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hiw-steps {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 1100px;
+}
+
+.hiw-step {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 24px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.3s;
+}
+
+.hiw-step:hover {
+  border-color: var(--primary);
+}
+
+.step-number {
+  font-size: 13px;
+  color: var(--primary);
+  font-weight: 700;
+  background-color: var(--bg-dark);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+.step-icon {
+  font-size: 36px;
+}
+
+.hiw-step h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hiw-step p {
+  color: var(--text-gray);
+  font-size: 13px;
+  line-height: 1.6;
+}

@@ -1,0 +1,137 @@
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 16px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.pricing-badge {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.pricing-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.pricing-section > p {
+  color: var(--text-gray);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pricing-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.pricing-card.highlighted {
+  border-color: var(--primary);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.pricing-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.period {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.pricing-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+.pricing-card .btn-primary {
+  background-color: var(--primary);
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.pricing-card .btn-secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 340px;
+  }
+}

@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import HowItWorks from './components/HowItWorks'
 import Upload from './components/Upload'
 import Chat from './components/Chat'
+import Pricing from './components/Pricing'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
       <HowItWorks />
       <Upload />
       <Chat />
+      <Pricing />
       <Footer />
     </div>
   )

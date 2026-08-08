@@ -30,7 +30,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="hiw-section">
+    <section className="hiw-section" id="howitworks">
       <div className="hiw-badge">Simple Process</div>
       <h2>How LexIndia Works</h2>
       <p>Get legal clarity in 4 simple steps</p>

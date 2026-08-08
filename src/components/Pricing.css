@@ -135,3 +135,6 @@
     max-width: 340px;
   }
 }
+.pricing-section {
+  scroll-margin-top: 80px;
+}

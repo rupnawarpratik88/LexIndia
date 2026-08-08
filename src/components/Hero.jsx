@@ -3,7 +3,7 @@ import './Hero.css'
 
 const Hero = () => {
   return (
-    <section className="hero">
+   <section className="hero" id="home">
       <div className="hero-badge">🇮🇳 Built for Indian Law</div>
       <h1>Your AI Legal Assistant <br /> for <span>Indian Law</span></h1>
       <p>Upload any legal document — contract, notice, agreement — and get instant analysis in simple English or Hindi</p>

@@ -88,3 +88,10 @@ html {
     width: 100%;
   }
 }
+#pricing {
+  scroll-margin-top: 80px;
+}
+
+#howitworks {
+  scroll-margin-top: 80px;
+}

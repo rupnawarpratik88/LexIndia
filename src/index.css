@@ -30,3 +30,61 @@ body {
 html {
   scroll-behavior: smooth;
 }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-stats {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .hiw-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hiw-step {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .upload-box {
+    padding: 40px 16px;
+  }
+
+  .chat-box {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .result-box {
+    width: 100%;
+  }
+}

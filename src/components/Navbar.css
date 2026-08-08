@@ -47,3 +47,23 @@
   cursor: pointer;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .navbar-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}

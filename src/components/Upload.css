@@ -147,3 +147,49 @@
   border-color: var(--primary);
   font-weight: 600;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-main);
+  border-radius: 2px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.mobile-menu a {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.mobile-menu .navbar-btn {
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}

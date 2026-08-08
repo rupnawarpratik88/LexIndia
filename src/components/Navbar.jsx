@@ -21,7 +21,8 @@ const Navbar = () => {
         <a onClick={() => scrollTo('home')} href="javascript:void(0)">Home</a>
         <a onClick={() => scrollTo('howitworks')} href="javascript:void(0)">How it Works</a>
         <a onClick={() => scrollTo('pricing')} href="javascript:void(0)">Pricing</a>
-        <button className="navbar-btn">Get Started</button>
+        <a onClick={() => scrollTo('contact')} href="javascript:void(0)">Contact</a>
+        <button className="navbar-btn" onClick={() => scrollTo('upload')}>Get Started</button>
       </div>
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
@@ -33,7 +34,8 @@ const Navbar = () => {
           <a onClick={() => scrollTo('home')} href="javascript:void(0)">Home</a>
           <a onClick={() => scrollTo('howitworks')} href="javascript:void(0)">How it Works</a>
           <a onClick={() => scrollTo('pricing')} href="javascript:void(0)">Pricing</a>
-          <button className="navbar-btn">Get Started</button>
+          <a onClick={() => scrollTo('contact')} href="javascript:void(0)">Contact</a>
+          <button className="navbar-btn" onClick={() => scrollTo('upload')}>Get Started</button>
         </div>
       )}
     </nav>

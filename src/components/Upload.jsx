@@ -54,7 +54,7 @@ const [language, setLanguage] = useState('english')
   }
 
   return (
-    <section className="upload-section">
+    <section className="upload-section" id="upload">
       <h2>Analyze Your Document</h2>
       <p>Upload any legal document and get instant AI analysis</p>
       <div className="upload-box">

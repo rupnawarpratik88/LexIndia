@@ -125,3 +125,25 @@
   padding-left: 12px;
   border-left: 2px solid var(--border);
 }
+.lang-toggle {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.lang-btn {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border);
+  color: var(--text-gray);
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.lang-btn.active {
+  background-color: var(--primary);
+  color: #000;
+  border-color: var(--primary);
+  font-weight: 600;
+}

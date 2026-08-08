@@ -10,6 +10,7 @@ const Upload = () => {
   const [text, setText] = useState('')
   const [result, setResult] = useState('')
   const [loading, setLoading] = useState(false)
+const [language, setLanguage] = useState('english')
 
   const extractText = async (selectedFile) => {
     if (selectedFile.type === 'application/pdf') {
@@ -44,7 +45,7 @@ const Upload = () => {
     if (!text) return
     setLoading(true)
     try {
-      const response = await analyzeDocument(text)
+      const response = await analyzeDocument(text, language)
       setResult(response)
     } catch (error) {
       setResult('Error analyzing document. Please try again.')
@@ -64,6 +65,20 @@ const Upload = () => {
           <input type="file" accept=".txt,.pdf" hidden onChange={handleFile} />
         </label>
         <p className="upload-hint">Supports PDF and TXT files</p>
+<div className="lang-toggle">
+  <button 
+    className={language === 'english' ? 'lang-btn active' : 'lang-btn'}
+    onClick={() => setLanguage('english')}
+  >
+    English
+  </button>
+  <button 
+    className={language === 'hindi' ? 'lang-btn active' : 'lang-btn'}
+    onClick={() => setLanguage('hindi')}
+  >
+    हिंदी
+  </button>
+</div>
         {file && <p className="file-name">✅ {file.name}</p>}
       </div>
       {file && (

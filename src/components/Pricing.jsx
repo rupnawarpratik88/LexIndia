@@ -47,7 +47,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section className="pricing-section">
+    <section className="pricing-section" id="pricing">
       <div className="pricing-badge">Simple Pricing</div>
       <h2>Choose Your Plan</h2>
       <p>Affordable legal AI for every Indian</p>

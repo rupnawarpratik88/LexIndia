@@ -5,6 +5,7 @@ import HowItWorks from './components/HowItWorks'
 import Upload from './components/Upload'
 import Chat from './components/Chat'
 import Pricing from './components/Pricing'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
       <Upload />
       <Chat />
       <Pricing />
+      <Contact />
       <Footer />
     </div>
   )

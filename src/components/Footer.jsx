@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Company</h4>
             <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="javascript:void(0)" onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}>Contact</a>
             <a href="#">Privacy Policy</a>
           </div>
         </div>

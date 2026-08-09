@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ user, onGetStarted, onLogout }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const scrollTo = (id) => {
@@ -22,7 +22,11 @@ const Navbar = () => {
         <a onClick={() => scrollTo('howitworks')} href="javascript:void(0)">How it Works</a>
         <a onClick={() => scrollTo('pricing')} href="javascript:void(0)">Pricing</a>
         <a onClick={() => scrollTo('contact')} href="javascript:void(0)">Contact</a>
-        <button className="navbar-btn" onClick={() => scrollTo('upload')}>Get Started</button>
+        {user ? (
+          <button className="navbar-btn" onClick={onLogout}>Logout</button>
+        ) : (
+          <button className="navbar-btn" onClick={onGetStarted}>Get Started</button>
+        )}
       </div>
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
@@ -35,7 +39,11 @@ const Navbar = () => {
           <a onClick={() => scrollTo('howitworks')} href="javascript:void(0)">How it Works</a>
           <a onClick={() => scrollTo('pricing')} href="javascript:void(0)">Pricing</a>
           <a onClick={() => scrollTo('contact')} href="javascript:void(0)">Contact</a>
-          <button className="navbar-btn" onClick={() => scrollTo('upload')}>Get Started</button>
+          {user ? (
+            <button className="navbar-btn" onClick={onLogout}>Logout</button>
+          ) : (
+            <button className="navbar-btn" onClick={onGetStarted}>Get Started</button>
+          )}
         </div>
       )}
     </nav>

@@ -1,0 +1,166 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+}
+
+.dashboard-sidebar {
+  width: 240px;
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--border);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: fixed;
+  height: 100vh;
+}
+
+.dashboard-logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dashboard-logo span {
+  color: var(--primary);
+}
+
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-nav a {
+  color: var(--text-gray);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.dashboard-nav a:hover {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+.dashboard-nav a.active {
+  background-color: var(--bg-dark);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.dashboard-logout {
+  margin-top: auto;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-gray);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dashboard-main {
+  margin-left: 240px;
+  padding: 40px;
+  flex: 1;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  color: var(--text-gray);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.stat-card h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-card p {
+  color: var(--text-gray);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.dashboard-actions h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.action-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.action-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  width: 200px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.action-card:hover {
+  border-color: var(--primary);
+}
+
+.action-card span {
+  font-size: 32px;
+}
+
+.action-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.action-card p {
+  color: var(--text-gray);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    display: none;
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

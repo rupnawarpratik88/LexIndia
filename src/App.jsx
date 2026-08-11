@@ -6,6 +6,7 @@ import Upload from './components/Upload'
 import Chat from './components/Chat'
 import Draft from './components/Draft'
 import Pricing from './components/Pricing'
+import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Auth from './components/Auth'
@@ -55,6 +56,7 @@ function App() {
       <Chat />
       <Draft />
       <Pricing />
+      <About />
       <Contact />
       <Footer />
     </div>

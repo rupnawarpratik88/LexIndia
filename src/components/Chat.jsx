@@ -50,7 +50,7 @@ const Chat = () => {
   }
 
   return (
-    <section className="chat-section">
+   <section className="chat-section" id="chat">
       <h2>Ask LexIndia AI ⚖️</h2>
       <p>Ask any question about Indian Law</p>
       <div className="chat-box">

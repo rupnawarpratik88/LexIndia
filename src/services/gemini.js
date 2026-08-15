@@ -22,5 +22,11 @@ export const analyzeDocument = async (text, language) => {
   })
 
   const data = await response.json()
-  return data.choices[0].message.content
+if (data.error) {
+  if (data.error.code === 'rate_limit_exceeded') {
+    return 'Too many requests. Please wait 30 seconds and try again.'
+  }
+  return 'Error: ' + data.error.message
+}
+return data.choices[0].message.content
 }

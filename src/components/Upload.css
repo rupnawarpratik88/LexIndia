@@ -193,3 +193,8 @@
     display: flex;
   }
 }
+.extracting-msg {
+  color: var(--primary);
+  font-size: 14px;
+  margin-top: 10px;
+}
